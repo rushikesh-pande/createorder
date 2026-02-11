@@ -17,6 +17,19 @@ Microservice for creating customer orders with product selection and order manag
 ### Create Order
 **POST** `/api/v1/orders`
 
+**🆕 ENHANCEMENTS:**
+
+### Product Suggestions (NEW)
+**GET** `/api/v1/suggestions/product/{productId}` - Get AI-based product suggestions
+**GET** `/api/v1/suggestions/personalized/{customerId}` - Get personalized recommendations
+**GET** `/api/v1/suggestions/trending` - Get trending products
+
+**Enhancement Features:**
+- AI-powered product recommendations
+- Personalized suggestions based on customer history
+- Trending and bestselling products
+- Smart cross-selling and upselling
+
 **Request Body:**
 ```json
 {
