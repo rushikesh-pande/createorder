@@ -60,6 +60,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- User Authentication Library -->
+        <dependency>
+            <groupId>com.auth</groupId>
+            <artifactId>userauth</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <!-- Spring Boot Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
