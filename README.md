@@ -1,7 +1,7 @@
 # createorder
 
 ## Overview
-Microservice for: **Create order: - create customer order as per desired product selected by customer git**
+Microservice for: **Create order: - create customer order as per desired product selected by customer here please provide better suggestions to customers publish event in kafka topic**
 
 ## Tech Stack
 - Java 17
