@@ -15,6 +15,10 @@ import java.util.List;
 @AllArgsConstructor
 public class OrderResponse {
 
+    /** TraceId for end-to-end request tracking */
+    private String traceId;
+
+
     private String orderId;
     private String customerId;
     private String customerName;

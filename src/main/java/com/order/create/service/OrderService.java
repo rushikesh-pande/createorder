@@ -5,6 +5,7 @@ import com.order.create.entity.Order;
 import com.order.create.entity.OrderItem;
 import com.order.create.entity.OrderStatus;
 import com.order.create.repository.OrderRepository;
+import com.orderprocessing.trace.TraceContextHolder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -24,7 +25,8 @@ public class OrderService {
 
     @Transactional
     public OrderResponse createOrder(CreateOrderRequest request) {
-        log.info("Creating order for customer: {}", request.getCustomerId());
+        String traceId = TraceContextHolder.getTraceId();
+        log.info("[{}] Creating order for customer: {}", traceId, request.getCustomerId());
 
         // Generate unique order ID
         String orderId = generateOrderId();
